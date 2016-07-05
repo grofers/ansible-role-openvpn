@@ -2,3 +2,6 @@
 
 - name: openvpn restart
   service: name=openvpn state=restarted
+
+- name: restart collectd
+  service: name=collectd state=restarted
