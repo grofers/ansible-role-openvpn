@@ -57,6 +57,8 @@ openvpn_use_pam_users: []                         # If empty use system users
                                                   # otherwise use users from the option
                                                   # openvpn_use_pam_users:
                                                   # - { name: user, password: password }
+openvpn_use_auth_gen_token: yes
+openvpn_use_auth_gen_token_lifetime: 57600
 
 # LDAP authentication and configuration (optional)
 openvpn_use_ldap: no

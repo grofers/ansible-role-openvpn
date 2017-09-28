@@ -73,7 +73,6 @@ verb {{openvpn_verb}}
 
 {% if openvpn_use_pam or openvpn_use_ldap %}
 auth-user-pass
-auth-nocache
 reneg-sec 0
 {% endif %}
 
