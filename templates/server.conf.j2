@@ -150,6 +150,10 @@ group nogroup
 client-to-client
 {% endif %}
 
+{% if openvpn_use_auth_gen_token %}
+auth-gen-token {{ openvpn_use_auth_gen_token_lifetime }}
+{% endif %}
+
 {% if openvpn_use_pam %}
 plugin {{openvpn_use_pam_plugin|default(openvpn_use_pam_plugin_distribution)}} openvpn
 reneg-sec 0
